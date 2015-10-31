@@ -38,7 +38,8 @@
     "babel-plugin-transform-react-jsx": "*",
     "babel-plugin-transform-flow-strip-types": "*",
     "babel-plugin-transform-async-to-module-method": "*",
-    "babel-plugin-transform-runtime": "*"
+    "babel-plugin-transform-runtime": "*",
+    "babel-plugin-transform-decorators": "*"
   },
   "gitHead": "8ee99edb5dbc9f3a18cf2b29343435f8c388d4f4",
   "bugs": {
