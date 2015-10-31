@@ -24,7 +24,6 @@ module.exports = {
     require("babel-plugin-transform-react-jsx"),
     require("babel-plugin-transform-flow-strip-types"),
     require("babel-plugin-syntax-flow"),
-    require("babel-plugin-syntax-jsx"),
-    require("babel-plugin-transform-runtime")
+    require("babel-plugin-syntax-jsx")
   ]
 };
