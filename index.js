@@ -19,10 +19,12 @@ module.exports = {
     require("babel-plugin-transform-es2015-block-scoping"),
     require("babel-plugin-transform-es2015-typeof-symbol"),
     require("babel-plugin-transform-es2015-modules-commonjs"),
-    [require("babel-plugin-transform-regenerator"), { async: true, asyncGenerators: true }],
+    [require("babel-plugin-transform-async-to-module-method"), {module: 'bluebird', method: 'coroutine'}],
+    //require("babel-plugin-transform-regenerator"),
     require("babel-plugin-transform-react-jsx"),
     require("babel-plugin-transform-flow-strip-types"),
     require("babel-plugin-syntax-flow"),
-    require("babel-plugin-syntax-jsx")
+    require("babel-plugin-syntax-jsx"),
+    require("babel-plugin-transform-runtime")
   ]
 };
