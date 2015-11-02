@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-nktpro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Babel preset",
   "author": {
     "name": "Jacky Nguyen",
@@ -13,41 +13,9 @@
     "url": "git+https://github.com/nktpro/babel-preset.git"
   },
   "main": "index.js",
-  "dependencies": {
-    "babel-plugin-transform-es2015-template-literals": "*",
-    "babel-plugin-transform-es2015-literals": "*",
-    "babel-plugin-transform-es2015-function-name": "*",
-    "babel-plugin-transform-es2015-arrow-functions": "*",
-    "babel-plugin-transform-es2015-block-scoped-functions": "*",
-    "babel-plugin-transform-es2015-classes": "*",
-    "babel-plugin-transform-es2015-object-super": "*",
-    "babel-plugin-transform-es2015-shorthand-properties": "*",
-    "babel-plugin-transform-es2015-computed-properties": "*",
-    "babel-plugin-transform-es2015-for-of": "*",
-    "babel-plugin-transform-es2015-sticky-regex": "*",
-    "babel-plugin-transform-es2015-unicode-regex": "*",
-    "babel-plugin-transform-es2015-constants": "*",
-    "babel-plugin-transform-es2015-spread": "*",
-    "babel-plugin-transform-es2015-parameters": "*",
-    "babel-plugin-transform-es2015-destructuring": "*",
-    "babel-plugin-transform-es2015-block-scoping": "*",
-    "babel-plugin-transform-es2015-typeof-symbol": "*",
-    "babel-plugin-transform-es2015-modules-commonjs": "*",
-    "babel-plugin-syntax-flow": "*",
-    "babel-plugin-syntax-jsx": "*",
-    "babel-plugin-transform-react-jsx": "*",
-    "babel-plugin-transform-flow-strip-types": "*",
-    "babel-plugin-transform-async-to-module-method": "*",
-    "babel-plugin-transform-runtime": "*",
-    "babel-plugin-transform-decorators": "*"
-  },
-  "gitHead": "8ee99edb5dbc9f3a18cf2b29343435f8c388d4f4",
+  "dependencies": {},
   "bugs": {
     "url": "https://github.com/nktpro/babel-preset/issues"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "babel-preset-nktpro@0.0.1",
-  "_shasum": "c4190cbbd1669ae8e575afecc294321af9c7f748",
-  "_from": "nktpro/babel-preset#master",
-  "_resolved": "git://github.com/nktpro/babel-preset.git#8ee99edb5dbc9f3a18cf2b29343435f8c388d4f4"
+  "readme": "ERROR: No README data found!"
 }
