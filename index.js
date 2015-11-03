@@ -1,3 +1,22 @@
+var remapAsyncToGenerator = require("babel-helper-remap-async-to-generator");
+var t = require("babel-types");
+
+function bluebirdCoroutine() {
+  return {
+    inherits: require("babel-plugin-syntax-async-functions"),
+    visitor: {
+      Function: function(path, state) {
+        if (!path.node.async || path.node.generator) return;
+
+        remapAsyncToGenerator(
+          path,
+          t.memberExpression(t.identifier(t.toIdentifier('Promise')), t.identifier(t.toIdentifier('coroutine')))
+        );
+      }
+    }
+  };
+}
+
 module.exports = {
   plugins: [
     require("babel-plugin-transform-es2015-template-literals"),
@@ -21,7 +40,8 @@ module.exports = {
     require("babel-plugin-transform-es2015-block-scoping"),
     require("babel-plugin-transform-es2015-typeof-symbol"),
     require("babel-plugin-transform-es2015-modules-commonjs"),
-    [require("babel-plugin-transform-async-to-module-method"), {module: 'bluebird', method: 'coroutine'}],
+    //[require("babel-plugin-transform-async-to-module-method"), {module: 'bluebird', method: 'coroutine'}],
+    bluebirdCoroutine,
     //require("babel-plugin-transform-regenerator"),
     require("babel-plugin-transform-object-rest-spread"),
     require("babel-plugin-transform-react-jsx"),
